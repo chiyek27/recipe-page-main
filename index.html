@@ -15,7 +15,8 @@
     .attribution { 
       font-size: 11px; 
       text-align: center; 
-      margin-top: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
     .attribution a { 
       color: hsl(228, 45%, 44%); 
@@ -39,12 +40,26 @@
     .card {
       max-width: 700px;
       background: hsl(0, 0%, 100%);
-      border-radius: 30px; 
       padding: 36px;
+      margin-top: 0;
+    }
+    @media (min-width: 768px) {
+      .card {
+        margin-top: 50px; /* bisa atur sesuai kebutuhan */
+        margin-bottom: 50px; /* bisa atur sesuai kebutuhan */ 
+        border-radius: 30px; 
+      }
     }
     .hero {
-      border-radius: 15px;
-      max-width: 100%;
+      max-width: calc(100% + 72px);
+      margin: -36px 0 0 -36px;
+    }
+    @media (min-width: 768px) {
+      .hero {
+        border-radius: 15px;
+        max-width: calc(100%);
+        margin: 0;
+      }
     }
     h2 { 
       font-family:"Young Serif",serif; 
